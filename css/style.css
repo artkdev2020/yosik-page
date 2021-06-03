@@ -84,7 +84,6 @@ li a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  padding-top: 50px;
   width: 40%;
   height: 100%;
   background: #1d2424cc;
@@ -97,6 +96,10 @@ li a:hover {
   line-height: 2.75em;
   font-weight: 600;
   text-align: right;
+}
+
+.about-us__first-text{
+  margin-top: 70px;
 }
 
 .info {
