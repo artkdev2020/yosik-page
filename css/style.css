@@ -1,21 +1,20 @@
-body { 
-	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
-	display: flex;
+body {
+  font-family: segoe-ui_normal, Segoe UI, Segoe, Segoe WP, Helvetica Neue,
+    Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
-header{
+header {
   width: 100%;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: #333;
+  height: 64px;
 }
 
 ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -35,17 +34,131 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #455766;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #69849b;
+}
+
+.menu__logo {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.menu__image {
+  height: 40px;
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
 
-.menu__logo{
-  justify-self: flex-end;
+.about-us{
+  background: #d0c3bd;
 }
 
-.menu__image{
-  height: 40px;
+.container {
+  width: 100%;
+  height: 800px;
+}
+
+.about-us__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../images/main/aboutUs.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -150px;
+}
+
+.about-us__text-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #1d2424cc;
+}
+
+.about-us__text {
+  color: white;
+  margin-right: 70px;
+  font-size: 2em;
+  line-height: 2.75em;
+  font-weight: 600;
+  text-align: right;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background: #d0c3bd;
+}
+
+.info__wrapper{
+  width: 520px;
+}
+
+.info__img-wrapper {
+  height: 380px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.info__route-img-props {
+  transition: all 0.5s;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info__route-img-props:hover {
+  transform: scale(1.5);
+}
+
+.about-us__text-block{
+  margin: 40px auto 40px auto;
+  padding: 16px;
+  width: 60%;
+}
+
+.about-us__info{
+  color: black;
+  font-size: 1.75em;
+  line-height: 2.0em;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #3d6a66;
+}
+
+.icon__container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon{
+  height: 24px;
+  width: 24px;
+  margin: 15px;
+}
+
+.footer__text{
+  margin: 10px;
+  align-self: center;
 }
