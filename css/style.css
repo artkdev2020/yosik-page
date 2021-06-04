@@ -113,6 +113,9 @@ li a:hover {
 
 .info__wrapper{
   width: 520px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .info__img-wrapper {
@@ -176,11 +179,36 @@ footer{
   right: 20px;
   position:fixed;
   bottom: 20px;
-  width: 64px;
-  height: 64px;
+  width: 86px;
+  height: 86px;
   font-size: 2.75em;
   background-color: #3d6a66;
   border-radius: 50%;
   border: 0;
   z-index: 5;
+}
+
+.contactUsBottom{
+  align-self: center;
+}
+
+.btn{
+  color: white;
+}
+
+.action-button {
+	width: 100px;
+  align-self: center;
+	background: #3d6a66;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+
+.action-button:hover, .action-button:focus, .btn:hover, .btn:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #3d6a66;
 }
