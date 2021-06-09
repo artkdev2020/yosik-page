@@ -61,7 +61,7 @@ li a:hover {
   background-color: #455766;
 }
 
-.about-us{
+.about-us {
   background: #d0c3bd;
 }
 
@@ -98,7 +98,7 @@ li a:hover {
   text-align: right;
 }
 
-.about-us__first-text{
+.about-us__first-text {
   margin-top: 70px;
 }
 
@@ -111,7 +111,7 @@ li a:hover {
   background: #d0c3bd;
 }
 
-.info__wrapper{
+.info__wrapper {
   width: 520px;
   margin: 15px;
   display: flex;
@@ -125,6 +125,22 @@ li a:hover {
   cursor: pointer;
 }
 
+.info__img-link {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info__text-bg {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+  background-color: #ffffffab;
+}
+
 .info__route-img-props {
   transition: all 0.5s;
   height: 100%;
@@ -136,48 +152,48 @@ li a:hover {
   transform: scale(1.5);
 }
 
-.about-us__text-block{
+.about-us__text-block {
   margin: 40px auto 40px auto;
   padding: 16px;
   width: 60%;
 }
 
-.about-us__info{
+.about-us__info {
   color: black;
   font-size: 1.75em;
-  line-height: 2.0em;
+  line-height: 2em;
   text-align: center;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   background-color: #dcdcdd;
 }
 
-.icon__container{
+.icon__container {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-.icon{
+.icon {
   cursor: pointer;
   height: 24px;
   width: 24px;
   margin: 15px;
 }
 
-.footer__text{
+.footer__text {
   margin: 10px;
   align-self: center;
 }
 
-#contactUs{
+#contactUs {
   right: 20px;
-  position:fixed;
+  position: fixed;
   bottom: 20px;
   width: 86px;
   height: 86px;
@@ -188,27 +204,33 @@ footer{
   z-index: 5;
 }
 
-.contactUsBottom{
+.contactUsBottom {
+  width: 100%;
   align-self: center;
 }
 
-.btn{
+.btn {
   color: white;
 }
 
 .action-button {
-	width: 100px;
+  width: 100%;
   align-self: center;
-	background: #3d6a66;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
+  background: #3d6a66;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin: 10px 5px;
+  font-size: 1.75em;
+  line-height: 2em;
 }
 
-.action-button:hover, .action-button:focus, .btn:hover, .btn:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #3d6a66;
+.action-button:hover,
+.action-button:focus,
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #3d6a66;
 }
