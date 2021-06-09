@@ -161,6 +161,11 @@ li a:hover {
   width: 60%;
 }
 
+.about-us__info-text{
+  min-height: 250px;
+  padding: 2%;
+}
+
 .about-us__info {
   color: black;
   font-size: 1.75em;
