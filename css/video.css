@@ -141,7 +141,7 @@ footer {
   width: 100%;
   height: 600px;
   display: grid;
-  grid-template-items: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2% 2%;
   grid-template-areas:
