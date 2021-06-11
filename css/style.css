@@ -256,3 +256,8 @@ footer {
 .footer__logo {
   width: 30%;
 }
+
+.action-button__container{
+  margin-top: 5%;
+  width: 30%;
+}
