@@ -1,0 +1,27 @@
+.video{
+	display: flex;
+	flex-direction: column;
+	margin-top: 64px;
+	padding: 2%;
+}
+
+.video__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2% 2%;
+  grid-template-areas:
+    'first-video second-video third-video'
+    'forth-video fifth-video .';
+}
+
+.first-video { grid-area: first-video; }
+.second-video { grid-area: second-video; }
+.third-video { grid-area: third-video; }
+.forth-video { grid-area: forth-video; }
+.fifth-video { grid-area: fifth-video; }
+
+.video__player{
+	/* width: 100%;
+	height: 100%; */
+}
