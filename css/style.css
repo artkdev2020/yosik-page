@@ -69,6 +69,7 @@ li a:hover {
   width: 100%;
   height: 800px;
   margin-top: 64px;
+  margin-bottom: 15%;
 }
 
 .about-us__image {
@@ -78,7 +79,6 @@ li a:hover {
   background: url('../images/main/aboutUs.jfif');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -150px;
 }
 
 .about-us__text-bg {
