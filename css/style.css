@@ -185,6 +185,7 @@ li a:hover {
 footer {
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .icon__container {
