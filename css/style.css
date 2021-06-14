@@ -69,7 +69,12 @@ li a:hover {
   width: 100%;
   height: 800px;
   margin-top: 64px;
-  margin-bottom: 15%;
+}
+
+.anchor{
+  background: #d0c3bd;
+  width: 100%;
+  height: 250px;
 }
 
 .about-us__image {
@@ -81,21 +86,28 @@ li a:hover {
   background-repeat: no-repeat;
 }
 
+.logo__main{
+  width: 10%;
+  object-fit: contain;
+}
+
 .about-us__text-bg {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 100%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
   background: #1d2424cc;
 }
 
 .about-us__text-container{
-  text-align: end;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .about-us__text {
@@ -103,10 +115,6 @@ li a:hover {
   font-size: 3.25em;
   line-height: 3.5em;
   font-weight: 600;
-}
-
-.about-us__first-text {
-  margin-top: 70px;
 }
 
 .info {
