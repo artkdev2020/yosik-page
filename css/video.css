@@ -1,5 +1,6 @@
 body {
   background-color: #d0c3bd;
+  text-align: right;
 }
 
 footer {
@@ -8,6 +9,9 @@ footer {
 
 .title {
   margin-top: 80px;
+  margin-bottom: 1%;
+  color: #1a1a1a;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +21,24 @@ footer {
   font-size: 2em;
   line-height: 2.25em;
   font-weight: 600;
+}
+
+.preview__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.preview__video-wrapper{
+  margin-right: 2%;
+}
+
+.preview__text{
+  margin-right: 2%;
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 .images {
@@ -90,12 +112,6 @@ footer {
   height: 100%;
 }
 
-.title {
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .content__image {
   object-fit: contain;
   width: 100%;
@@ -140,7 +156,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 10% 0 3% 0;
+  margin: 1% 0 3% 0;
 }
 
 .main-video__wrapper {
@@ -162,6 +178,73 @@ footer {
   height: 100%;
 }
 
-.action-button__video{
+.action-button__video {
   align-self: center;
+}
+
+.accordion {
+  align-self: center;
+  width: 95%;
+  padding: 0 5px;
+  border: 2px solid #3d6a66;
+  cursor: pointer;
+  display: flex;
+  margin: 10px 0;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.accordion i {
+  color: #3d6a66;
+  transition: all 0.5s ease-in;
+  margin-right: 1%;
+}
+
+.accordion .fa-minus {
+  display: none;
+}
+
+.active,
+.accordion:hover {
+  background-color: #3d6a66;
+  color: white;
+  transition: all 0.5s ease-in;
+  border: 2px solid #dddddd;
+}
+
+.active .fa-minus {
+  display: block;
+}
+
+.active .fa-plus {
+  display: none;
+}
+
+.accordion h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #2a3238;
+  padding-left: 2%;
+  margin-right: 1%; 
+}
+
+.active i,
+.active h3,
+.accordion:hover i,
+.accordion:hover h5 {
+  color: white;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid #3d6a66;
+  margin-left: 2%;
+  font-size: 0.875em;
+  line-height: 0.9em;
+  text-align: justify;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  max-height: 0;
 }

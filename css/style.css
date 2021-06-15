@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  min-height: 100vh;
 }
 
 header {
@@ -182,8 +183,7 @@ li a:hover {
 footer {
   display: flex;
   flex-direction: column;
-  justify-self: flex-end;
-  margin-top: 2%;
+  margin-top: auto;
   width: 100%;
 }
 
