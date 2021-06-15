@@ -44,17 +44,18 @@ li a:hover {
   align-items: center;
   width: 100%;
   height: 100%;
+  padding-left: 1%;
   background-color: #69849b;
 }
 
 .menu__logo {
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 2%;
   cursor: pointer;
 }
 
 .menu__image {
-  height: 40px;
+  height: 50px;
 }
 
 .active {
@@ -68,38 +69,55 @@ li a:hover {
 .container {
   width: 100%;
   height: 800px;
+  margin-top: 64px;
+}
+
+.anchor {
+  background: #d0c3bd;
+  width: 100%;
+  height: 40vh;
 }
 
 .about-us__image {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url('../images/main/aboutUs.jpg');
+  background: url('../images/main/aboutUs.jfif');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -150px;
+}
+
+.logo__main {
+  width: 10%;
+  object-fit: contain;
+  margin-left: 2%;
+  margin-right: 3%;
 }
 
 .about-us__text-bg {
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 100%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
   background: #1d2424cc;
+}
+
+.about-us__text-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .about-us__text {
   color: white;
-  margin-right: 70px;
   font-size: 2em;
-  line-height: 2.75em;
+  line-height: 2.25em;
   font-weight: 600;
-  text-align: right;
-}
-
-.about-us__first-text {
-  margin-top: 70px;
+  margin-left: 3%;
 }
 
 .info {
@@ -161,7 +179,7 @@ li a:hover {
   width: 60%;
 }
 
-.about-us__info-text{
+.about-us__info-text {
   min-height: 250px;
   padding: 2%;
 }
@@ -178,7 +196,9 @@ li a:hover {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #dcdcdd;
+  justify-self: flex-end;
+  margin-top: 2%;
+  width: 100%;
 }
 
 .icon__container {
@@ -195,8 +215,10 @@ footer {
 }
 
 .footer__text {
-  margin: 10px;
   align-self: center;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  color: #3d6a66;
 }
 
 #contactUs {
@@ -245,4 +267,18 @@ footer {
 .btn:hover,
 .btn:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #1d2424;
+}
+
+.footer__logos-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__logo {
+  width: 20%;
+}
+
+.action-button__container {
+  margin-top: 5%;
+  width: 30%;
 }
