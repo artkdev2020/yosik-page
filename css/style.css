@@ -74,12 +74,12 @@ li a:hover {
 }
 
 .about-us__image {
-  position: relative;
   width: 100%;
   height: 100%;
   background: url('../images/main/aboutUs.jfif');
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .logo__main {
@@ -169,6 +169,7 @@ li a:hover {
 .about-us__info-text {
   min-height: 250px;
   padding: 2%;
+  z-index: 1;
 }
 
 .about-us__info {
