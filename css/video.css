@@ -23,6 +23,15 @@ footer {
   font-weight: 600;
 }
 
+.preview__img-wrapper{
+  padding: 2%;
+}
+
+.preview__img{
+  width: 30%;
+  object-fit: contain;
+}
+
 .preview__container {
   display: flex;
   flex-direction: column;
