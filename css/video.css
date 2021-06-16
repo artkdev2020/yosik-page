@@ -23,11 +23,11 @@ footer {
   font-weight: 600;
 }
 
-.preview__img-wrapper{
+.preview__img-wrapper {
   padding: 2%;
 }
 
-.preview__img{
+.preview__img {
   width: 30%;
   object-fit: contain;
 }
@@ -124,10 +124,21 @@ footer {
   height: 100%;
 }
 
+.block__big-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .content__image {
-  object-fit: contain; 
+  object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.content__image-big {
+  object-fit: contain;
+  width: 60%;
 }
 
 .content__text {
