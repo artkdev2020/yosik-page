@@ -24,12 +24,13 @@ footer {
 }
 
 .preview__img-wrapper {
+  width: 35%;
   padding: 2%;
 }
 
 .preview__img {
-  width: 30%;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
 }
 
 .preview__container {
