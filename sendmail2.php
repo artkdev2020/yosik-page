@@ -27,7 +27,7 @@ try {
 	);
 
     //Recipients
-    $mail->setFrom('yosik.page@gmail.com', 'Test');
+    $mail->setFrom('yosik.page@gmail.com', 'Work');
     $mail->addAddress('artkdev2020@gmail.com');     // Add a recipient
 
     //Content
