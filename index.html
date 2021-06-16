@@ -10,22 +10,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <title>Main Page</title>
   </head>
   <body>
     <header>
       <div class="menu">
-        <ul>
-          <li><a href="#">בית</a></li>
-          <li><a href="#news">סוגי עבודות/דוגמאות</a></li>
-          <li><a href="/html/FormPage.html">צור קשר</a></li>
-        </ul>
-        <div class="about-us__text-container">
-          <span>0525163947</span>
-          <span>רעיון שלך ביצוע שלנו</span>
-          <span>קרול יוסף</span>
-          <img class="menu__image" src="/images/logo/logo2.jfif" alt="logo" />
-        </div>
+          <div class="navbar">
+            <div class="computer__menu">
+              <a class="active" href="#">בית</a>
+              <a href="#news">סוגי עבודות/דוגמאות</a>
+              <a href="/html/FormPage.html">צור קשר</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fa fa-bars" onclick="isDropdown()"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a class="active__mobile" href="#">בית</a>
+                <a href="#news">סוגי עבודות/דוגמאות</a>
+                <a href="/html/FormPage.html">צור קשר</a>
+              </div>
+            </div>
+          </div>
+          <div class="about-us__text-container">
+            <span class="about-us__item">0525163947</span>
+            <span class="about-us__item">רעיון שלך ביצוע שלנו</span>
+            <span class="about-us__item">קרול יוסף</span>
+            <img
+              class="menu__image about-us__item"
+              src="/images/logo/logo2.jfif"
+              alt="logo"
+            />
+          </div>
+        </div> 
       </div>
     </header>
     <section class="about-us">
@@ -110,12 +128,8 @@
             </div>
             <div class="about-us__info-text">
               <h6 class="about-us__info">הדפסה תלת מימדית</h6>
-              <p class="about-us__info">
-                יצור דגמים בהדפסה
-              </p>
-              <p class="about-us__info">
-                יצור סידרתי של מוצרים בהדפסה
-              </p>
+              <p class="about-us__info">יצור דגמים בהדפסה</p>
+              <p class="about-us__info">יצור סידרתי של מוצרים בהדפסה</p>
               <h6 class="about-us__info">בוא נתחיל להדפיס</h6>
             </div>
             <a class="about-us__info-btn" href="/html/formPage.html"
