@@ -113,53 +113,6 @@ li a:hover {
   color: white;
 }
 
-@media screen and (max-width: 800px) {
-  .computer__menu a {
-    font-size: 0.875em;
-    line-height: 1.125em;
-  }
-
-  .about-us__text-container {
-    font-size: 0.875em;
-    line-height: 1.125em;
-  }
-
-  .menu__image {
-    height: 35px;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .computer__menu a {
-    font-size: 0.625em;
-    line-height: 0.875em;
-  }
-
-  .about-us__text-container {
-    font-size: 0.625em;
-    line-height: 0.875em;
-  }
-
-  .menu__image {
-    height: 24px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .dropbtn {
-    display: block;
-  }
-
-  .computer__menu {
-    display: none;
-  }
-
-  .dropdown-content a{
-    font-size: 0.625em;
-    line-height: 0.875em;
-  }
-}
-
 .menu__image {
   height: 50px;
 }
@@ -315,7 +268,7 @@ footer {
   cursor: pointer;
   height: 24px;
   width: 24px;
-  margin: 15px;
+  margin: 1%;
 }
 
 .footer__text {
@@ -385,4 +338,171 @@ footer {
 .action-button__container {
   margin-top: 5%;
   width: 30%;
+}
+
+@media screen and (max-width: 1560px) {
+  .action-button {
+    font-size: 1.5em;
+    line-height: 1.75em;
+  }
+
+  .about-us__info {
+    font-size: 1.5em;
+    line-height: 1.75em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .action-button {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .about-us__info {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .about-us__info-text {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .action-button {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .about-us__info {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .action-button {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .about-us__info {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+  .about-us__info-text {
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .computer__menu a {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+  .about-us__text-container {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+  .menu__image {
+    height: 35px;
+  }
+
+  .footer__text {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  #contactUs {
+    width: 56px;
+    height: 56px;
+    font-size: 2em;
+  }
+
+  .icon {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .action-button {
+    font-size: 0.25em;
+    line-height: 0.5em;
+  }
+
+  .about-us__info {
+    font-size: 0.75em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .computer__menu a {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .about-us__text-container {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .menu__image {
+    height: 24px;
+  }
+
+  .footer__text {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropbtn {
+    display: block;
+  }
+
+  .computer__menu {
+    display: none;
+  }
+
+  .dropdown-content a {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .footer__text {
+    font-size: 0.875em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .action-button {
+    font-size: 0.25em;
+    line-height: 0.5em;
+  }
+
+  .about-us__info {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .about-us__info-text {
+    min-height: 80px;
+  }
+
+  .icon {
+    height: 10px;
+    width: 10px;
+  }
+
+  .footer__text {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
 }
