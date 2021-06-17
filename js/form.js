@@ -6,30 +6,50 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     let formData = new FormData(form);
 
-    let response = await fetch('/sendmail2.php', {
-      method: 'POST',
-      body: formData,
-    });
-    if (response.ok) {
-      let result = await response.json();
-      form.reset();
+    let modal = document.getElementById('myModal'),
+      span = document.getElementsByClassName('close')[0],
+      header = document.getElementsByClassName('modal-header')[0],
+      textBody = document.getElementsByClassName('modal-body__text')[0],
+      textHeader = document.getElementsByClassName('modal-header__text')[0],
+      headerColor = '#69849b',
+      headerText = 'Thank you for request!',
+      bodyText = 'We will definitely contact you!!';
 
-      let modal = document.getElementById('myModal');
-      let span = document.getElementsByClassName('close')[0];
+    try {
+      let response = await fetch('/sendmail.php', {
+        method: 'POST',
+        body: formData,
+      });
 
-      // btn.onclick = function () {
-      modal.style.display = 'block';
-      // };
+      if (response.ok) {
+        //?
+        //let result = await response.json();
+        form.reset();
+      } else {
+        headerColor = 'tomato';
+        headerText = 'Sorry';
+        bodyText = 'We have some problems on the server side.';
+      }
+    } catch (e) {
+      console.log(e);
+      headerColor = 'tomato';
+      headerText = 'Sorry';
+      bodyText = 'We have some problems on the server side.';
+    }
 
-      span.onclick = function () {
+    header.style.backgroundColor = headerColor;
+    textBody.textContent = bodyText;
+    textHeader.textContent = headerText;
+    modal.style.display = 'block';
+
+    span.onclick = function () {
+      modal.style.display = 'none';
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
         modal.style.display = 'none';
-      };
-
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = 'none';
-        }
-      };
-    } else alert('error');
+      }
+    };
   }
 });
