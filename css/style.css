@@ -430,8 +430,8 @@ footer {
 
 @media screen and (max-width: 750px) {
   .action-button {
-    font-size: 0.25em;
-    line-height: 0.5em;
+    font-size: 0.75em;
+    line-height: 1em;
   }
 
   .about-us__info {
@@ -459,6 +459,15 @@ footer {
     font-size: 1em;
     line-height: 1.25em;
   }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__wrapper{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -482,15 +491,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .action-button {
-    font-size: 0.25em;
-    line-height: 0.5em;
-  }
-
-  .about-us__info {
-    font-size: 0.625em;
-    line-height: 0.875em;
-  }
 
   .about-us__info-text {
     min-height: 80px;

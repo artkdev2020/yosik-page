@@ -225,3 +225,10 @@ input#img-7:checked ~ .nav-dots label#img-dot-7,
 input#img-8:checked ~ .nav-dots label#img-dot-8{
   background: #3d6a66;
 }
+
+
+@media screen and (max-width: 600px) {
+  .printing__info{
+    display: none;
+  }
+}
