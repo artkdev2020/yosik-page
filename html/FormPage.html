@@ -70,26 +70,34 @@
               class="feedback-input"
               placeholder="שם *"
               id="name"
+              title="There should be letters only"
+              pattern="[A-Za-z ]{1,32}"
+              required
             />
           </p>
 
           <p class="email">
             <input
               name="email"
-              type="text"
+              type="email"
               class="feedback-input"
               id="email"
               placeholder="אי מייל *"
+              pattern=".+@globex\.com"
+              required
             />
           </p>
 
           <p class="phone">
-            <input
+            <input 
               name="phone"
-              type="text"
               class="feedback-input"
+              type="tel"
               id="phone"
               placeholder="טלפון *"
+              title="There should numbers only"
+              onkeypress="return onlyNumberKey(event)" 
+              required
             />
           </p>
 
@@ -99,6 +107,7 @@
               class="feedback-input"
               id="comment"
               placeholder="הודעה *"
+              required
             ></textarea>
           </p>
 
