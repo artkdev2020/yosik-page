@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
       textBody = document.getElementsByClassName('modal-body__text')[0],
       textHeader = document.getElementsByClassName('modal-header__text')[0],
       headerColor = '#69849b',
-      headerText = 'Thank you for request!',
-      bodyText = 'We will definitely contact you!!';
+      headerText = 'תודה שפנית אלינו',
+      bodyText = 'אנחנו נחזור אליך בהקדם האפשרי';
 
     try {
       let response = await fetch('/sendmail.php', {
