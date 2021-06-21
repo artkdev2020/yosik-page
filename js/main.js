@@ -1,37 +1,16 @@
-$(function(){
-    $('.slider').slick({
-        prevArrow:'<button class="slick-arrow slick-prev"><img src="images/prev.svg" alt=" prev arrow"></button>',
-        nextArrow:'<button class="slick-arrow slick-next"><img src="images/next.svg" alt="next arrow"></button>',
-        fade: true,
-        responsive: [
-            {
-                breakpoint: 441,
-                settings: {
-                    arrows: false
-                }
-            }
-        ]
-    });
-});
+function isDropdown() {
+  document.getElementById('myDropdown').classList.toggle('show');
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('form');
-    //console.log(form);
-    form.addEventListener('submit', formSend);
-
-    async function formSend(e) {
-      e.preventDefault();
-      let formData = new FormData(form);
-
-      let response = await fetch("../sendmail2.php", {
-        method: "POST",
-        body:formData
-      });
-      if(response.ok) {
-      let result = await response.json();
-      form.reset();
+window.onclick = function (event) {
+  if (!event.target.matches('i')) {
+    let dropdowns = document.getElementsByClassName('dropdown-content');
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
-      else
-        alert('error');
     }
-  })
+  }
+};

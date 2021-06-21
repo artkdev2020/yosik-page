@@ -6,19 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/form.css" />
+    <script src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/form.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header>
+<header>
       <div class="menu">
-        <ul>
-          <li><a href="/index.html">בית</a></li>
-          <li><a href="/index.html#news">סוגי עבודות/דוגמאות</a></li>
-          <li><a href="/html/FormPage.html">צור קשר</a></li>
-          <li class="menu__logo">
-            <img class="menu__image" src="/images/logo/logo1.jfif" alt="logo" />
-          </li>
-        </ul>
+          <div class="navbar">
+            <div class="computer__menu">
+              <a href="/index.html">בית</a>
+              <a href="/index.html#news">סוגי עבודות/דוגמאות</a>
+              <a class="active" href="#">צור קשר</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fa fa-bars" onclick="isDropdown()"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="/index.html">בית</a>
+                <a href="/index.html#news">סוגי עבודות/דוגמאות</a>
+                <a class="active__mobile" href="#">צור קשר</a>
+              </div>
+            </div>
+          </div>
+          <div class="about-us__text-container">
+            <span class="about-us__item">0525163947</span>
+            <span class="about-us__item">רעיון שלך ביצוע שלנו</span>
+            <span class="about-us__item">קרול יוסף</span>
+            <img
+              class="menu__image about-us__item"
+              src="/images/logo/logo2.jfif"
+              alt="logo"
+            />
+          </div>
+        </div> 
       </div>
     </header>
     <div class="form-main__image"></div>
@@ -31,12 +57,12 @@
         </p>
         <p class="from__text">מבטיחים לחזור אליך תוך 48 שעות</p>
         <p class="from__text">ניתן גם ליצור איתנו קשר בטלפון</p>
-        <p class="from__text">08-6702323</p>
+        <p class="from__text">0525163947</p>
         <p class="from__text">תמיד לשירותך</p>
-        <p class="from__text">צוות י.פ. פתרונות טכניים בע”מ</p>
+        <p class="from__text">א.י. פתרונות טכניים</p>
       </div>
       <div id="form-div">
-        <form class="form" id="form">
+        <form class="form" id="form" method="POST">
           <p class="name">
             <input
               name="name"
@@ -44,26 +70,34 @@
               class="feedback-input"
               placeholder="שם *"
               id="name"
+              title="There should be letters only"
+              pattern="[A-Za-z ]{1,32}"
+              required
             />
           </p>
 
           <p class="email">
             <input
               name="email"
-              type="text"
+              type="email"
               class="feedback-input"
               id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
               placeholder="אי מייל *"
+              required
             />
           </p>
 
           <p class="phone">
-            <input
+            <input 
               name="phone"
-              type="text"
               class="feedback-input"
+              type="tel"
               id="phone"
               placeholder="טלפון *"
+              title="There should numbers only"
+              onkeypress="return onlyNumberKey(event)" 
+              required
             />
           </p>
 
@@ -73,6 +107,7 @@
               class="feedback-input"
               id="comment"
               placeholder="הודעה *"
+              required
             ></textarea>
           </p>
 
@@ -80,6 +115,18 @@
             <input type="submit" value="צור קשר" id="button-blue" />
           </div>
         </form>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <p class="modal-header__text"></p>
+        </div>
+        <div class="modal-body">
+          <p class="modal-body__text">
+          </p>
+        </div>
       </div>
     </div>
     <footer>

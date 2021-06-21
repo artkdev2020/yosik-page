@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  min-height: 100vh;
 }
 
 header {
@@ -14,7 +15,6 @@ header {
 }
 
 ul {
-  width: 100%;
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -35,23 +35,82 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.menu a:hover {
   background-color: #455766;
 }
 
 .menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   padding-left: 1%;
+  padding-right: 5%;
   background-color: #69849b;
 }
 
-.menu__logo {
-  margin-left: auto;
-  margin-right: 2%;
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  display: none;
+}
+
+.dropdown .dropbtn {
   cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.icon__menu {
+  color: white;
 }
 
 .menu__image {
@@ -60,6 +119,10 @@ li a:hover {
 
 .active {
   background-color: #455766;
+}
+
+.active__mobile {
+  background-color: #b9bcbe;
 }
 
 .about-us {
@@ -73,9 +136,11 @@ li a:hover {
 }
 
 .anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #d0c3bd;
   width: 100%;
-  height: 40vh;
 }
 
 .about-us__image {
@@ -94,22 +159,17 @@ li a:hover {
   margin-right: 3%;
 }
 
-.about-us__text-bg {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background: #1d2424cc;
-}
-
 .about-us__text-container {
-  width: 100%;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 2%;
+  color: white;
+}
+
+.about-us__item {
+  margin-left: 2%;
 }
 
 .about-us__text {
@@ -196,8 +256,7 @@ li a:hover {
 footer {
   display: flex;
   flex-direction: column;
-  justify-self: flex-end;
-  margin-top: 2%;
+  margin-top: auto;
   width: 100%;
 }
 
@@ -211,7 +270,7 @@ footer {
   cursor: pointer;
   height: 24px;
   width: 24px;
-  margin: 15px;
+  margin: 1%;
 }
 
 .footer__text {
@@ -281,4 +340,204 @@ footer {
 .action-button__container {
   margin-top: 5%;
   width: 30%;
+}
+
+@media screen and (max-width: 1560px) {
+  .action-button {
+    font-size: 1.5em;
+    line-height: 1.75em;
+  }
+
+  .about-us__info {
+    font-size: 1.5em;
+    line-height: 1.75em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .action-button {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .about-us__info {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .about-us__info-text {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .action-button {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .about-us__info {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .action-button {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .about-us__info {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+  .about-us__info-text {
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .computer__menu a {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+  .about-us__text-container {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+  .menu__image {
+    height: 35px;
+  }
+
+  .footer__text {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  #contactUs {
+    width: 56px;
+    height: 56px;
+    font-size: 2em;
+  }
+
+  .icon {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+#cube {
+  margin-left: auto;
+}
+
+#circle {
+  animation: wheel 4s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#head {
+  animation: nod 3s linear 1s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes nod {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .action-button {
+    font-size: 0.75em;
+    line-height: 1em;
+  }
+
+  .about-us__info {
+    font-size: 0.75em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .computer__menu a {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .about-us__text-container {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .menu__image {
+    height: 24px;
+  }
+
+  .footer__text {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropbtn {
+    display: block;
+  }
+
+  .computer__menu {
+    display: none;
+  }
+
+  .dropdown-content a {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
+
+  .footer__text {
+    font-size: 0.875em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-us__info-text {
+    min-height: 80px;
+  }
+
+  .icon {
+    height: 10px;
+    width: 10px;
+  }
+
+  .footer__text {
+    font-size: 0.625em;
+    line-height: 0.875em;
+  }
 }
